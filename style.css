@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Poppins','sans-serif';
     background-color: #fff;
@@ -16,9 +10,57 @@ body{
 /* /end here */
 
 /*display page*/
+
+
 .displaypage{
-    text-align: center;
+    margin-left: 250px;
+    margin-top: 20px;
+    text-align: center; 
 }
+
+h1{
+    font-size: 3.5em;
+}
+.displaypage .box{
+   position: fixed;
+    height: 70px;
+    width: 260px;
+    text-align: right;
+    margin-left: 65%;
+    background: linear-gradient(135deg, #f3440f, #ffeb3b, #09ff00);
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.displaypage .box .display{
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    transform: translate(80px,-15px);
+    z-index: 999;
+    background: black;
+    height: 55px;
+    width: 240px;
+    text-align: center;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.displaypage .box .display #time{
+    padding-top: 10px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
 .entries {
     
   font-family:inherit;
